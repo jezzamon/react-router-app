@@ -1,0 +1,41 @@
+.Image {
+  position: absolute;
+  height: 400px;
+  width: 80vw;
+}
+
+.example-enter {
+/*
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+*/
+  transform: translateY(100%);
+}
+
+.example-enter.example-enter-active {
+/*  opacity: 1;*/
+	transform: translateY(0%);
+	transition: transform .5s ease-in-out;
+}
+
+.example-leave {
+
+  opacity: 0;
+  transition: opacity .25s ease-in;
+
+/*  transform: translate(0%);	*/
+  
+}
+
+.example-leave.example-leave-active {
+  opacity: 0;
+/*
+	transform: translateY(-100%);
+	transition: transform .5s ease-in-out;
+*/
+}
+
+.link-active {
+  color: #bbbbbb;
+  text-decoration: none;
+}
